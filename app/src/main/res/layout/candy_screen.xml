@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_portrait">
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textTime"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/two_numbers_frame"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="60"
+        android:fontFamily="@font/fofo"
+        android:textAlignment="gravity"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/imgEndGame"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+        android:elevation="5dp"
+        android:background="@drawable/time_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textScoreGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:elevation="5dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="3"
+        android:fontFamily="@font/fofo"
+        android:text="0"
+        android:textColor="#FFF9F9"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/restartgame"
+        android:layout_width="220dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="RESTART"
+        android:textSize="40sp"
+        android:fontFamily="@font/fofo"
+        android:visibility="gone"
+        android:background="@drawable/btn_1"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/textScoreGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/frz_eff"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/icebg_portrait"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
